@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Home";
 import History from "./History";
 import { Route, NavLink } from "react-router-dom";
+import Mytimer from "./Mytimer";
 
 class App extends Component {
   render() {
@@ -39,6 +40,7 @@ class App extends Component {
         </ul>
         <Route exact path="/" component={Home} />
         <Route path="/notre-histoire" component={History} />
+        <Mytimer />
       </div>
     );
   }
